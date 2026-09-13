@@ -40,5 +40,210 @@ def draw():
         screen.draw.line((X(0), y), (X(1000), y), CYAN) 
         y += gap
         gap += 6
+    left_buildings = [
+    (50, 220, 70, 200),
+    (150, 170, 90, 250),
+    (280, 270, 60, 150)
+    ]
+
+    for x, y, w, h in left_buildings:
+        offset = 30
+
+        draw_rectangle(x, y, w, h, MAGENTA)
+
+        draw_rectangle(
+        x + offset,
+        y - offset,
+        w,
+        h,
+        MAGENTA
+        )
+
+        screen.draw.line(
+        (X(x), y),
+        (X(x + offset), y - offset),
+        MAGENTA
+        )
+
+        screen.draw.line(
+        (X(x + w), y),
+        (X(x + w + offset), y - offset),
+        MAGENTA
+        )
+
+        screen.draw.line(
+        (X(x), y + h),
+        (X(x + offset), y + h - offset),
+        MAGENTA
+        )
+
+        screen.draw.line(
+        (X(x + w), y + h),
+        (X(x + w + offset), y + h - offset),
+        MAGENTA
+        )
+    right_buildings = [
+        (650, 270, 70, 150),
+        (760, 170, 90, 250),
+        (880, 220, 70, 200)
+    ]
+
+    for x, y, w, h in right_buildings:
+        offset = 30
+
+        draw_rectangle(x, y, w, h, CYAN)
+
+        draw_rectangle(
+        x - offset,
+        y - offset,
+        w,
+        h,
+        CYAN
+        )
+
+        screen.draw.line(
+        (X(x), y),
+        (X(x - offset), y - offset),
+        CYAN
+        )
+
+        screen.draw.line(
+        (X(x + w), y),
+        (X(x + w - offset), y - offset),
+        CYAN
+        )
+
+        screen.draw.line(
+        (X(x), y + h),
+        (X(x - offset), y + h - offset),
+        CYAN
+        )  
+        screen.draw.line(
+        (X(x + w), y + h),
+        (X(x + w - offset), y + h - offset),
+        CYAN
+        )
+
+    stars = [
+    (80, 60),
+    (150, 90),
+    (250, 70),
+    (350, 100),
+    (650, 80),
+    (760, 60),
+    (900, 90)
+    ]
+
+    for x, y in stars:
+        screen.draw.filled_circle(
+        (X(x), y),
+        2,
+        WHITE
+        )
+
+pgzrun.go()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
